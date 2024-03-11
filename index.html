@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Newcastle City Council Renew Homes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Protest+Revolution&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .logo {
+            /* background-color: #333; */
+            height: 100px;
+            width: 180px;
+            background-image: url("logo.png");
+            background-size: cover;
+        }
+
+
+        .navbar a {
+            /* color: black; */
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .main-content {
+            display: flex;
+            width: 100%;
+            background: radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%);
+            flex-wrap: wrap;
+            justify-content: center;
+            /* margin: 1rem 0; */
+            margin-top: 15px;
+        }
+
+        .card {
+            width: 1%;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            flex-basis: calc(33.333% - 2rem);
+            margin: 1rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .card h2 {
+            margin: 0 0 0.5rem;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .button {
+            background-color: #3a52dc;
+            border: 2px solid #1c36c7;
+            border-radius: 15px;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem 0;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: #333;
+            transition: .3s;
+        }
+
+
+        .container {
+            width: 85vmin;
+
+            /* position: absolute; */
+            /* transform: translate(-50%, -50%); */
+            /* top: 50%; */
+            /* left: 50%; */
+            overflow: hidden;
+            border: 20px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            animation: slide 16s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(0);
+            }
+
+            30% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-100%);
+            }
+
+            55% {
+                transform: translateX(-200%);
+            }
+
+            75% {
+                transform: translateX(-200%);
+            }
+
+            80% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(-300%);
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .bigd {
+            display: flex;
+            /* background-color: #444; */
+        }
+
+        .banner {
+            display: flex;
+            width: 65%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            /* background-color: #444; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+        }
+
+        .sp {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #333;
+            font-size: 5.5vh;
+        }
+
+        h1 {
+            font-family: "Angkor", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 5.5vh;
+            word-spacing: 10px;
+        }
+
+
+
+
+        .animate-charcter {
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    #4d22e9 0%,
+                    #1c36c7 29%,
+                    #2c849c 67%,
+                    #2075cb 100%);
+            /* background-size: auto auto; */
+            /* background-clip: border-box; */
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            /* display: inline-block; */
+            /* font-size: 190px; */
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .baapbtn {
+            display: flex;
+            /* background-color: #333; */
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .navbar {
+            display: flex;
+            height: 50px;
+            background-color: #2075cb;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            /* gap: 15vw; */
+            /* padding: 1rem; */
+        }
+
+        .logo {
+            position: absolute;
+            left: 5px;
+        }
+
+
+        .homeb {
+            width: 33%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            /* Set default color */
+        }
+
+        .homeb:hover {
+            transition: .5s;
+            background-color: rgb(55, 143, 237);
+            color: white;
+            /* Change color to white when hovering */
+        }
+
+
+        .donate {
+
+            /* background-color: #333; */
+            width: 33%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donate:hover {
+            transition: .5s;
+            background-color: rgb(55, 143, 237);
+            color: white;
+            /* Change color to white when hovering */
+        }
+
+        .about {
+            /* background-color: #333; */
+            width: 33%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .about:hover {
+            transition: .5s;
+            background-color: rgb(55, 143, 237);
+            color: white;
+            /* Change color to white when hovering */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .about-us {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            font-family: "Protest Revolution", sans-serif;
+            font-size: large;
+        }
+
+        .mega {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one {
+            height: 35vh;
+            margin: 15px;
+            width: 150vw;
+            background-color: #2075cb;
+            background-image: url("aboutusssss.jpeg");
+            background-size: cover;
+            border-radius: 15px;
+
+        }
+
+        .two {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 3vh;
+            margin: 5px;
+            line-height: 42px;
+            word-spacing: 5px;
+        }
+
+        .combine {
+            display: flex;
+            gap: 5px;
+            width: 100%;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <h1>Newcastle City Council Renew Homes</h1>
+    </div>
+    <nav class="navbar">
+        <div class="homeb">
+            <a href="#" class="wwf">HOME</a>
+        </div>
+        <div class="about">
+            <a href="#" class="wwf">ABOUT</a>
+        </div>
+        <div class="donate">
+            <a href="#donate" class="wwf">DONATE</a>
+        </div>
+    </nav>
+    <div class="bigd">
+        <div class="container">
+            <div class="wrapper">
+                <img src="new castle.jpg">
+                <img src="2n.jpg">
+                <img src="3n.jpg">
+                <img src="4n.jpg">
+            </div>
+        </div>
+        <div class="banner">
+            <h2 class="animate-charcter"> <span class="sp">Renew</span> Homes. <span class="sp">Renew</span> Hopes</h2>
+            <h2 class="animate-charcter"> Donate to transform Empty Houses</h2>
+        </div>
+    </div>
+    <div class="about-us">
+        <h2>
+            ABOUT US
+        </h2>
+        <div class="combine">
+            <a href="https://www.instagram.com/newcastlecouncil" target="_blank">
+                <i class="fa-brands fa-instagram" style="color: #ec32dc; font-size: 6vh;"></i>
+            </a>
+            <a href="https://twitter.com/NewcastleCC" target="_blank">
+                <i class="fa-brands fa-x-twitter" style="color: #000000; font-size: 6vh;"></i>
+            </a>
+            <i class="fa-brands fa-facebook" style="color: #1a6eff; font-size: 6vh;"></i>
+        </div>
+        <div class="mega">
+            <div class="two">
+                <P>Welcome to our crowdfunding platform dedicated to transforming empty houses into homes for families
+                    in need. We believe in the power of community and compassion to create positive change. Our mission
+                    is to renovate vacant properties and provide safe, comfortable living spaces for families living in
+                    poor conditions. By coming together, we can make a real difference in the lives of those who need it
+                    most.
+
+                    Join us in our journey to bring hope and stability to families in need. Together, we can turn empty
+                    houses into loving homes.</P>
+            </div>
+            <div class="one"></div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="card">
+            <h2 style="text-align: center;">Register as a Landlord</h2>
+            <p>
+                Provide a property for renovation and see the impact of your
+                contribution.
+            </p>
+            <a href="#" class="button">Register Now</a>
+        </div>
+        <div class="card">
+            <h2 style="text-align: center;">See the Impact</h2>
+            <p>
+                View photos of renovated houses and read testimonials from those who
+                have benefited from the program.
+            </p>
+            <a href="#" class="button">View Impact</a>
+        </div>
+        <div class="card">
+            <a id="donate">
+                <h2 style="text-align: center;">Donate</h2>
+            </a>
+            <p>
+                Help transform empty houses by donating as a citizen or a business.
+            </p>
+            <div class="baapbtn">
+                <a href="donation.html" target="_blank" class="button">As a CITIZEN</a>
+                <a href="donation.html" target="_blank" class="button">As a BUSINESS</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the donate div
+            const donateDiv = document.querySelector('.donate');
+
+            // Add click event listener to the donate div
+            donateDiv.addEventListener('click', function () {
+                // Scroll to the donate section smoothly
+                document.querySelector('.card:last-child').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the about div
+            const aboutDiv = document.querySelector('.about');
+
+            // Add click event listener to the about div
+            aboutDiv.addEventListener('click', function () {
+                // Scroll to the about-us section smoothly
+                document.querySelector('.about-us').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
